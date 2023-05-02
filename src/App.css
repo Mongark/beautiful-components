@@ -1,0 +1,75 @@
+hr {
+    border-width: 1px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.App {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: calc(100vw - 160px);
+    height: auto;
+    min-height: 100vh;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 8px;
+    background-color: rgb(255, 253, 208);
+    font-family: 'Roboto', sans-serif;
+}
+
+.AppLanding {
+    display: flex;
+    align-items: row;
+}
+
+.AppNavbar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.AppNavbarTitle {
+    width: 29em;
+    height: 50px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    margin-bottom: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+.AppNavbarTitle:hover {
+    border-bottom: 3px solid black;
+    transform: translateY(-2px);
+    transition: 0.15s ease-in-out;
+}
+
+.AppNavbarLinks {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: end;
+    align-self: center;
+}
+
+.AppNavbarLink {
+    height: 40px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+    transition: 0.15s ease-in-out;
+}
+
+.AppNavbarLink:hover {
+    border-bottom: 3px solid black;
+    transform: translateY(-2px);
+}
+
+.AppPage {
+    display: flex;
+    font-weight: 0;
+}
