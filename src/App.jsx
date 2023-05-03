@@ -13,7 +13,7 @@ function App() {
         <div className='App' >
             <Navbar />
 
-            <div className='AppPage'>
+            <div className='AppBody'>
                 <ReactMarkdown>
                     {sample_texts[0]}
                 </ReactMarkdown>
