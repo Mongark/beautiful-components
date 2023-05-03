@@ -1,6 +1,13 @@
 import './App.css';
 
+import ReactMarkdown from 'react-markdown';
+
 function App() {
+    const sample_texts = [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ];
+
     return (
         <div className='App' >
             <nav className='AppNavbar'>
@@ -27,13 +34,9 @@ function App() {
 
 
             <div className='AppPage'>
-                <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </h4>
-
-                <h4>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </h4>
+                <ReactMarkdown>
+                    {sample_texts[0]}
+                </ReactMarkdown>
             </div>
         </div>
     )
