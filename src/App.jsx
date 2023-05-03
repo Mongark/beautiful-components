@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 import ReactMarkdown from 'react-markdown';
 
@@ -10,28 +11,7 @@ function App() {
 
     return (
         <div className='App' >
-            <nav className='AppNavbar'>
-                <a href='#' className='AppNavbarTitle'>
-                    <h1>
-                        <span>Beautiful Components</span>
-                    </h1>
-                </a>
-
-                <div className='AppNavbarLinks'>
-                    <a href="/about" className='AppNavbarLink'>
-                        <h4>
-                            About me
-                        </h4>
-                    </a>
-
-                    <a href="/projects" className='AppNavbarLink'>
-                        <h4>
-                            Projects
-                        </h4>
-                    </a>
-                </div>
-            </nav>
-
+            <Navbar />
 
             <div className='AppPage'>
                 <ReactMarkdown>
