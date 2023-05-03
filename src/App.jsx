@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-
-import ReactMarkdown from 'react-markdown';
+import MarkdownPage from './components/MarkdownPage/MarkdownPage';
 
 function App() {
     const sample_texts = [
@@ -14,9 +13,7 @@ function App() {
             <Navbar />
 
             <div className='AppBody'>
-                <ReactMarkdown>
-                    {sample_texts[0]}
-                </ReactMarkdown>
+                <MarkdownPage title='Anything' content={sample_texts[0]} />
             </div>
         </div>
     )
