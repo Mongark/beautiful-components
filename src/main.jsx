@@ -8,7 +8,7 @@ import {
 
 import App from './App.jsx'
 import './index.css'
-import HomePage from './pages/HomePage/HomePage.jsx'
+import HomePage from './pages/HomePage.jsx'
 
 const router = createBrowserRouter([
     {

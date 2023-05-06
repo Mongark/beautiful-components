@@ -1,5 +1,4 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar';
 import {
     Outlet
 } from 'react-router-dom';
@@ -7,10 +6,10 @@ import {
 function App() {
 
     return (
-        <div className='App' >
+        <div className='app' >
             <Navbar />
 
-            <div className='AppBody'>
+            <div className='app-body'>
                 <Outlet />
             </div>
         </div>
