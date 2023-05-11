@@ -1,3 +1,7 @@
+import {
+    IoIosArrowDropdown
+} from '@react-icons/all-files/io/IoIosArrowDropdown';
+
 function Navbar() {
     return(
         <nav className='navbar'>
@@ -13,7 +17,9 @@ function Navbar() {
                     <li><a href="/">About</a></li>
 
                     <li className="navbar-menu-services">
-                        <a href="/">Services</a>
+                        <a href="/">
+                            Services <IoIosArrowDropdown />
+                        </a>
 
                         <ul className="navbar-menu-services-dropdown">
                             <li><a href="/">Work</a></li>
