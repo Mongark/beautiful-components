@@ -1,25 +1,34 @@
 function Navbar() {
     return(
         <nav className='navbar'>
-            <a href='#' className='navbar-title'>
-                <h1>
-                    <span>Beautiful Components</span>
-                </h1>
-            </a>
-
-            <div className='navbar-link-container'>
-                <a href="/about" className='navbar-link'>
-                    <h4>
-                        About me
-                    </h4>
-                </a>
-
-                <a href="/projects" className='navbar-link'>
-                    <h4>
-                        Projects
-                    </h4>
-                </a>
+            <div className='logo'>
+                <h4>Beautiful Components</h4>
             </div>
+
+            <ul className="navbar-links">
+
+                <div className="navbar-menu">
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+
+                    <li className="navbar-menu-services">
+                        <a href="/">Services</a>
+
+                        <ul className="navbar-menu-services-dropdown">
+                            <li><a href="/">Work</a></li>
+                            <li><a href="/">Work</a></li>
+                            <li><a href="/">Work</a></li>
+                            <li><a href="/">Work</a></li>
+                            <li><a href="/">Work</a></li>
+                            <li><a href="/">Work</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
         </nav>
     );
 }
